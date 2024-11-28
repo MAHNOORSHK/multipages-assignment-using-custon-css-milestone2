@@ -1,0 +1,238 @@
+.teamSection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.team {
+  width: 1000px;
+  height: 900px;
+}
+
+.teamheading {
+  width: 1000px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logodiv {
+  width: 150px;
+  height: 150px;
+  background-color: #cbea7b;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flowericon {
+  font-size: 100px;
+  color: #1a3129;
+}
+
+.teamtitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  gap: 10px;
+}
+
+.teamtitle h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.teamtitle p {
+  font-size: 14px;
+}
+
+.teammenu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.menubar {
+  height: 70px;
+  background-color: #234338;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.menubar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.menubar li {
+  padding: 5px 0 0 0;
+  width: 188px;
+  height: 30px;
+}
+
+.menubar li:hover {
+  background-color: #f6fbe9;
+  color: #234338;
+  font-size: 12.05px;
+}
+
+.cardsection {
+  width: 1000px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.teamcard1 {
+  width: 250px;
+  height: 200px;
+  position: relative;
+}
+
+.teamtext {
+  width: 150px;
+  height: 60px;
+  padding: 10px;
+  background-color: #f6fbe9;
+  border-top-right-radius: 10px;
+  position: absolute;
+  left: 31%;
+  transform: translate(-50%, -40%);
+}
+
+.teamtext h1 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.teamtext p {
+  font-size: 12px;
+}
+
+/* Small Screens (Below 768px) */
+@media (max-width: 768px) {
+  .team {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .teamheading {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .menubar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    height: auto;
+  }
+
+  .menubar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cardsection {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .teamcard1 {
+    width: 90%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6fbe9;
+    border: 2px solid #cbea7b;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .teamtext {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    background-color: #f6fbe9;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+
+/* Medium Screens (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .team {
+    height: auto;
+  }
+
+  .cardsection {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .teamcard1 {
+    width: calc(50% - 20px);
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6fbe9;
+    border: 2px solid #cbea7b;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box; 
+  }
+
+  .teamtext {
+    position: absolute; 
+    bottom: 10px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    background-color: #f6fbe9;
+    border-radius: 5px; 
+    text-align: center;
+  }
+}

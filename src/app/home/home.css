@@ -1,0 +1,598 @@
+/* Hero Section */
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 470px;
+  gap: 50px;
+  top: 0;
+  left: 0;
+  background-color: #f6fbe9;
+}
+
+.imageContainer {
+  width: 949px;
+  height: 832px;
+}
+
+.textContainer {
+  width: 949px;
+  height: 832px;
+  align-items: center;
+  justify-content: left;
+  padding-top: 50px;
+}
+
+.menuContainer {
+  width: 290px;
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  border-bottom: 2px solid #cbea7b;
+  color: #1a3129;
+}
+
+.textContainer h1 {
+  font-size: 58px;
+  font-weight: bold;
+  color: #1a3129;
+  line-height: normal;
+}
+
+.textContainer p {
+  width: 759px;
+  height: 108px;
+  font-size: 18px;
+  font-weight: 200;
+  color: #1a3129;
+}
+
+.btnContainer {
+  width: 400px;
+  height: 59px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  color: #1a3129;
+  font-size: 18px;
+  font-weight: 200;
+  margin-top: 20px;
+}
+
+.colorChange {
+  background-color: #cbea7b;
+  width: 164px;
+}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+  .mainContainer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .imageContainer,
+  .textContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .textContainer {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .menuContainer {
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .textContainer h1 {
+    font-size: 48px;
+  }
+
+  .textContainer p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+
+  .btnContainer {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .btnContainer .colorChange {
+    width: 150px;
+    height: 50px;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .imageContainer,
+  .textContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .textContainer {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .menuContainer {
+    font-size: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .textContainer h1 {
+    font-size: 36px;
+  }
+
+  .textContainer p {
+    width: 100%;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .btnContainer {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .btnContainer .colorChange {
+    width: 120px;
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+/* Feature Section */
+
+.featureSection {
+  width: 100%;
+  height: 800px;
+  background-color: #f6fbe9;
+  padding: 80px;
+  align-items: center;
+}
+
+.textFeature {
+  width: 1176px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textFeature h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.textFeature p {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.cardFeature {
+  width: 1176px;
+  height: 400px;
+}
+
+.parent {
+  height: 200px;
+  width: 1176px;
+  display: flex;
+  flex-direction: row;
+  row-gap: 5px;
+  column-gap: 5px;
+  justify-content: space-between;
+  background-color: #f6fbe9;
+}
+
+.child {
+  width: 783px;
+  height: 200px;
+  padding: 40px 50px;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.logoIcon {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.logoIcon .icon {
+  background-color: #cbea7b;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+}
+
+.logoText p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+  .featureSection {
+    padding: 40px;
+    height: auto;
+  }
+
+  .textFeature {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .textFeature h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .textFeature p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .cardFeature {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .parent {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .child {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .logoText {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .logoText p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    word-wrap: break-word;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .featureSection {
+    padding: 20px;
+    height: auto;
+  }
+
+  .textFeature {
+    width: 100%;
+    max-width: 90%; 
+    height: auto;
+  }
+
+  .textFeature h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .textFeature p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .cardFeature {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .parent {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .child {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .logoText {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .logoText p {
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  .logoIcon {
+    font-size: 20px;
+  }
+
+  .logoIcon .icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Blogs */
+
+.blogSection {
+  width: 100%;
+  height: 1400px;
+  background-color: #f6fbe9;
+  padding: 80px;
+  align-items: center;
+}
+
+.textBlog {
+  width: 1176px;
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textBlog h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.textBlog p {
+  font-size: 18px;
+  text-align: center;
+  width: 996px;
+}
+
+.cardBlog {
+  width: 1176px;
+  height: 1110px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.blogparent {
+  height: 1100px;
+  width: 782px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #f6fbe9;
+}
+
+.blogchild {
+  width: 580px;
+  height: 532px;
+  padding: 40px 50px;
+}
+
+.cardtext {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardtext p {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.cardtext h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.cardtext h5 {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.reviewcard {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.textreview h1 {
+  font-size: 20px;
+}
+
+.reviewicon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 120px;
+}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+  .blogSection {
+    padding: 40px;
+    height: auto;
+  }
+
+  .textBlog {
+    width: 90%;
+    height: auto;
+  }
+
+  .textBlog h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .textBlog p {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .cardBlog {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .blogparent {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .blogchild {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .cardtext h1 {
+    font-size: 20px;
+  }
+
+  .cardtext p {
+    font-size: 14px;
+  }
+
+  .cardtext h5 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .reviewcard {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .reviewicon {
+    margin-left: 0;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .blogSection {
+    padding: 20px;
+    height: auto;
+  }
+
+  .textBlog {
+    height: auto;
+  }
+
+  .textBlog h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .textBlog p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .cardBlog {
+    height: auto;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .blogparent {
+    height: auto;
+    gap: 15px;
+  }
+
+  .blogchild {
+    height: auto;
+    padding: 15px;
+  }
+
+  .cardtext h1 {
+    font-size: 18px;
+  }
+
+  .cardtext p {
+    font-size: 12px;
+  }
+
+  .cardtext h5 {
+    font-size: 10px;
+    margin-top: 8px;
+  }
+
+  .reviewcard {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .reviewicon {
+    margin-left: 0;
+  }
+}
